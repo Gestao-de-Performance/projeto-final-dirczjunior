@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: "Share Tech Mono", sans-serif;
+}
+:root{
+    --turquesa-200: #48D1CC;
+    --turquesa-300: #008B8B;
+    --turquesa-600: #2F4F4F;
+
+}
+h1{
+    color: var(--turquesa-600)
+    -webkit-text-stroke: 2px #00ffff;
+    text-shadow:
+      0 0 5px #00ffff,
+      0 0 10px #00ffff,
+      0 0 20px #00ccff;
+}
+h2{
+    color: var(--turquesa-300)
+    -webkit-text-stroke: 2px #00ffff;
+    text-shadow:
+    0 0 1px #00ffff,
+    0 0 2px #00ffff,
+    0 0 4px #00ccff; 
+}
+p{
+    color: var(--turquesa-300);
+    text-shadow: 0 0 1px #000000;
+    font-size: 1.2rem;
+}
+/*imagem de fundo*/
+body{
+    background-image: url('img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*cor para tag 'a' no cabeçalho*/
+a{
+    color: var(--turquesa-200);
+    text-shadow:
+    0 0 0.5px #00ffff,
+    0 0 1px #00ffff,
+    0 0 2px #00ccff, 
+    0 0 8px #000000; 
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+/*config do menu cabeçalho*/
+.menuNavegacao{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    border: 1.5px solid #48D1CC;
+    border-radius: 15px;
+    z-index: 1000;
+}
+/*troca de cor ao passar o cursor*/
+.palavra:hover {
+    color: var(--turquesa-300);
+}
+.mainMargin{
+    margin-top: 80px;
+}
+.sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #778899;
+}
+.sectionBox{
+    background-color: #363636C0;
+    border: 2px solid #48D1CC;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    margin-left: 20px;
+    max-width: 1300px;
+    box-shadow: 0px 20px 6px 6px hwb(177 4% 48% / 0.144);
+}

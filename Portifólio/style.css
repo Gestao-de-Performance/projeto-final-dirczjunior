@@ -10,6 +10,9 @@
     --turquesa-600: #2F4F4F;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 h1{
     color: var(--turquesa-600)
     -webkit-text-stroke: 2px #00ffff;
@@ -18,7 +21,7 @@ h1{
       0 0 10px #00ffff,
       0 0 20px #00ccff;
 }
-h2{
+h2, h3{
     color: var(--turquesa-300)
     -webkit-text-stroke: 2px #00ffff;
     text-shadow:
@@ -28,8 +31,9 @@ h2{
 }
 p{
     color: var(--turquesa-300);
-    text-shadow: 0 0 1px #000000;
+    text-shadow: 0 0 10px #000000;
     font-size: 1.2rem;
+    margin-top: 10px;
 }
 /*imagem de fundo*/
 body{
@@ -66,9 +70,11 @@ a{
     border-radius: 15px;
     z-index: 1000;
 }
-/*troca de cor ao passar o cursor*/
+/*troca de cor e aumentar texto ao passar o cursor*/
 .palavra:hover {
     color: var(--turquesa-300);
+    font-size: 1.750rem;
+    transition: all 0.2s ease;
 }
 .mainMargin{
     margin-top: 80px;
@@ -88,3 +94,46 @@ a{
     max-width: 1300px;
     box-shadow: 0px 20px 6px 6px hwb(177 4% 48% / 0.144);
 }
+.sectionBox .imgTitle {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectionBox .imgTitle img {
+    margin: 0 8px;
+    margin-bottom: auto;
+}
+.sectionBox . sectionTitle {
+    margin:0;
+    font-size: 1.8rem;
+}
+/* Estilo para o botão de expandir */
+.accordion-button {
+    background-color: #007bff; /* Cor do fundo do botão */
+    color: white;              /* Cor do texto */
+    border: none;              /* Remove borda */
+    padding: 15px;             /* Espaço interno do botão */
+    width: 100%;               /* O botão ocupa toda a largura disponível */
+    text-align: left;          /* Texto alinhado à esquerda */
+    font-size: 18px;           /* Tamanho da fonte */
+    cursor: pointer;          /* Cursor de mãozinha para indicar que é clicável */
+    transition: background-color 0.3s; /* Transição suave de cor ao passar o mouse */
+  }
+  
+  /* Estilo quando o mouse passar por cima do botão */
+  .accordion-button:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+  }
+  
+  /* Estilo para o conteúdo do accordion */
+  .accordion-body {
+    padding: 15px;
+    background-color: #f7f7f7; /* Cor do fundo do conteúdo */
+    border-top: 1px solid #ddd; /* Linha acima do conteúdo */
+    display: none; /* Esconde o conteúdo inicialmente */
+    margin-top: 10px;
+  }
+  
+  .accordion-body.show {
+    display: block; /* Exibe o conteúdo quando a classe "show" for aplicada */
+  }
